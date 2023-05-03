@@ -20,7 +20,6 @@ class Locale extends Injectable
         if(isset($_SESSION['language'])) {
             $translationFile = APP_PATH.'/messages/' . $language . '.php';
         }
-        // echo  $translationFile; die;
         if (true !== file_exists($translationFile)) {
             $translationFile = APP_PATH.'/messages/en-GB.php';
         }
